@@ -1323,7 +1323,7 @@ header{
 
 button{
     width: 12rem;
-    font-size: 12pt;
+    font-size: 16pt;
 
 
 }
@@ -1629,7 +1629,7 @@ header{
     height: 80px;
 }
 button{
-    font-size: 10pt;
+    font-size: 12pt;
 
     .arrow-container{
         width: 1rem;
