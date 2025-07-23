@@ -495,7 +495,7 @@ header {
     transition: opacity 0.4s;
   
     span{
-      max-width: 80%;
+      max-width: 70%;
       line-height: 1.2;
     }
   }
@@ -1304,10 +1304,11 @@ header{
 }
 
 
-
 .isotype-frame.header{
     order:1;
 }
+
+
 
 /*EXPERIMENTO COMÚN*/
 
@@ -1519,7 +1520,9 @@ li{
 }
 
 .canvas-instrucciones{
-    font-size:18px;
+    font-size:20px;
+    line-height: 1.2;
+
 }
 
 /*CONTACT-FLOAT*/
