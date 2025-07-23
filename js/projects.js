@@ -157,7 +157,7 @@ function animateProjectCards() {
                 ease: 'expo.out',
                 scrollTrigger: {
                     trigger: card,
-                    start: 'top 80%',
+                    start: 'top 90%',
                     toggleActions: 'play none none none',
                 },
                 delay: i * 0.10 // stagger tipo acordeón
