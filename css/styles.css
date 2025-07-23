@@ -1231,6 +1231,7 @@ button{
     
     .subtitular{
         font-size: 14pt;
+        padding-bottom:0rem;
     }
     
     h2.experimento-title{
