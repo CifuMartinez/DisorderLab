@@ -1,0 +1,102 @@
+.quercus-logo{
+    background-color: var(--color-white);
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    grid-column: 1 / span 1;
+
+}
+
+
+.quercus-creatividades{
+    grid-column: 2 / span 1;
+}
+
+.quercus-photo-02{
+    aspect-ratio: 16/9;
+    grid-column: 1 / span 2;
+    
+}
+
+.quercus-valley{
+    aspect-ratio: 16/9;
+    grid-column: 1 / span 1;
+    height: 100%;
+    width: auto;
+}
+
+/* Estilos para el segundo carrusel */
+.carousel-magazine {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    grid-column: 1 / span 1;
+}
+
+
+.quercus-photo-03{
+    grid-column: 2 / span 1;
+    aspect-ratio: 16/9;
+}
+
+/* Estilos para el tercer carrusel (bodegones) */
+.carousel-bodegon {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    grid-column: 1 / span 2;
+}
+
+/* Estilos para el video local */
+.video-quercus {
+    aspect-ratio: 16/9;
+    grid-column: 1 / span 2;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.teaser-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1024px) {
+
+    .quercus-creatividades{
+        grid-column: 1 / span 1;
+    }
+    
+    .quercus-logo{
+        grid-column: 1 / span 1;
+    }
+    
+    .carousel-bodegon {
+        grid-column: 1 / span 1;
+    }
+    
+    .video-quercus {
+        grid-column: 1 / span 1;
+    }
+    
+    .quercus-valley {
+        grid-column: 1 / span 1;
+    }
+    
+    .carousel-magazine {
+        grid-column: 1 / span 1;
+    }
+    
+    .quercus-photo-04 {
+        grid-column: 1 / span 1;
+    }
+    
+    /* Asegurar que todos los carruseles generales también ocupen una columna */
+    .carousel-container {
+        grid-column: 1 / span 1;
+    }
+}

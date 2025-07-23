@@ -1,0 +1,133 @@
+/* Estilos base para todos los gallery-item de Palleiro */
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Header específico */
+.palleiro-header {
+    height: 100vh;
+}
+
+.palleiro-summary .proyecto-texto {
+    padding-bottom: 1rem;
+}
+
+/* Elementos específicos de la galería */
+.palleiro-collage {
+    aspect-ratio: 16/9;
+    grid-column: 1 / span 2;
+}
+
+.palleiro-welcome {
+    aspect-ratio: 16/9;
+    grid-column: 1 / span 2;
+}
+
+/* Carruseles */
+.carousel-container-palleiro,
+.carousel-container-palleiro-portrait {
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-container-palleiro {
+    grid-column: 1 / span 1;
+}
+
+.carousel-container-palleiro-portrait {
+    grid-column: 2 / span 1;
+}
+
+.carousel-wrapper {
+    background-color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-container-palleiro .carousel-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container-palleiro .carousel-slide img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    display: block;
+}
+
+.carousel-container-palleiro-portrait .carousel-slide {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-container-palleiro-portrait .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Elementos adicionales de la galería */
+.palleiro-signature,
+.palleiro-social-media,
+.palleiro-magazine,
+.palleiro-magazine-2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    /* Reset general para todos los elementos del grid */
+    .proyecto-gallery > * {
+        grid-column: 1 / span 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    /* Asegurar que todos los gallery-item respeten el contenedor */
+    .gallery-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    /* Reglas específicas para los carruseles */
+    .carousel-container-palleiro,
+    .carousel-container-palleiro-portrait {
+        grid-column: 1 / span 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    /* Asegurar que todos los elementos de la galería ocupen una columna */
+    .palleiro-collage,
+    .palleiro-welcome,
+    .palleiro-signature,
+    .palleiro-social-media,
+    .palleiro-magazine,
+    .palleiro-magazine-2 {
+        grid-column: 1 / span 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+}
+    
