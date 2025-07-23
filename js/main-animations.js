@@ -177,7 +177,7 @@ function animateH1s() {
                 ease: 'expo.out',
                 scrollTrigger: {
                     trigger: btn,
-                    start: 'top 60%',
+                    start: 'top 80%',
                     toggleActions: 'play none none none',
                 },
                 delay: i * 0.08
