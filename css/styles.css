@@ -1308,6 +1308,9 @@ header{
     order:1;
 }
 
+li.nav-item:active {
+    text-decoration: underline;
+  }
 
 
 /*EXPERIMENTO COMÚN*/
@@ -1681,11 +1684,3 @@ button{
     align-items:flex-end;
 }
 }
-
-@media (max-width: 768px) {
-  li.nav-item:active {
-    text-decoration: underline;
-  }
-}
-
-
