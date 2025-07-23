@@ -1682,4 +1682,10 @@ button{
 }
 }
 
+@media (max-width: 768px) {
+  li.nav-item:active {
+    text-decoration: underline;
+  }
+}
+
 
