@@ -86,6 +86,32 @@ const bubblesSketch = (p) => {
     window.addEventListener('mouseup', function() {
       dragging = false;
     });
+
+    // Soporte táctil para móviles
+    frame.addEventListener('touchstart', function(e) {
+      if (e.touches.length === 1) {
+        dragging = true;
+        dragStartX = e.touches[0].clientX;
+        dragStartY = e.touches[0].clientY;
+        canvasOffsetX = targetOffsetX;
+        canvasOffsetY = targetOffsetY;
+        if (nextStepsInstrucciones) {
+          nextStepsInstrucciones.classList.add('oculto');
+        }
+      }
+    }, { passive: false });
+
+    window.addEventListener('touchmove', function(e) {
+      if (dragging && e.touches.length === 1) {
+        let dx = e.touches[0].clientX - dragStartX;
+        let dy = e.touches[0].clientY - dragStartY;
+        setCanvasPosition(canvasOffsetX + dx, canvasOffsetY + dy);
+      }
+    }, { passive: false });
+
+    window.addEventListener('touchend', function() {
+      dragging = false;
+    });
     animateCanvasMove();
   }
 
