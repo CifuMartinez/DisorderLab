@@ -267,7 +267,7 @@ header {
 }
 
 .logo{
-    width:12rem;
+    width:14rem;
     height:auto;
 }
 
@@ -1536,7 +1536,7 @@ li{
 @media (max-width: 480px) {
 
     .logo{
-        width: 8rem;
+        width: 10rem;
     }
 .quote-icon{
     width: 2rem;
