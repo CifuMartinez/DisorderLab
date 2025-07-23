@@ -304,6 +304,34 @@ document.addEventListener('DOMContentLoaded', function() {
     hoverZone.addEventListener('mouseup', stopSpeedAcceleration);
     hoverZone.addEventListener('mouseleave', stopSpeedAcceleration);
 
+    // Soporte táctil para acelerar la animación Lottie en móviles
+    hoverZone.addEventListener('touchstart', function(e) {
+      if (window.innerWidth < 768) {
+        startSpeedAcceleration();
+      }
+    }, { passive: false });
+
+    hoverZone.addEventListener('touchend', function(e) {
+      if (window.innerWidth < 768) {
+        stopSpeedAcceleration();
+      }
+    }, { passive: false });
+
+    // Bloquear scroll al interactuar con isotype-frame aboutme en móviles
+    const isotypeAboutme = document.querySelector('.isotype-frame.aboutme');
+    if (isotypeAboutme) {
+      isotypeAboutme.addEventListener('touchstart', function(e) {
+        if (window.innerWidth < 768) {
+          document.body.style.overflow = 'hidden';
+        }
+      }, { passive: false });
+      isotypeAboutme.addEventListener('touchend', function(e) {
+        if (window.innerWidth < 768) {
+          document.body.style.overflow = '';
+        }
+      }, { passive: false });
+    }
+
     // CONTACTO FLOTANTE (mover aquí para asegurar que los elementos existen)
     const contactFloat = document.getElementById('contact-float');
     const contactFloatClose = document.querySelector('.contact-float-close');
