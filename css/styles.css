@@ -500,6 +500,13 @@ header {
     }
   }
 
+.touch-icon{
+  width: 2rem;
+  height: auto;
+  padding-bottom: 1rem;
+  opacity: 0.7;
+}
+
 
 .canvas-instrucciones.oculto {
   opacity: 0;
@@ -1308,7 +1315,7 @@ header{
     order:1;
 }
 
-li.nav-item:active {
+.nav-link {
     text-decoration: underline;
   }
 
@@ -1479,7 +1486,7 @@ li{
 }
 
 .contact-button, .about-me-button {
-    height: 4rem;
+    height: 6rem;
 }
 
 /* EXPERIMENTO 02 */
