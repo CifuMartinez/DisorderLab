@@ -1,0 +1,119 @@
+/* Estilos base para todos los gallery-item de Fullstep */
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.fullstep-moodboard{
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top;
+    }
+}
+
+.carousel-fullstep_01{
+    grid-column: 1 / span 1;
+}
+
+.carousel-fullstep_02{
+    grid-column: 2 / span 1;
+    aspect-ratio: 16/9;
+}
+
+.video-fullstep-identity,
+.video-fullstep-concept {
+    aspect-ratio: 16/9;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.video-fullstep-identity{
+    grid-column: 1 / span 1;
+}
+
+.video-fullstep-concept{
+    grid-column: 2 / span 1;
+}
+.carousel-container-2 {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    grid-column: 1 / span 1;
+}
+.carousel-container-3 {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    grid-column: 1 / span 2;
+}
+
+.proyecto-web-button{
+    width: 30%;
+    border-top: 0.5px solid var(--color-white);
+}
+
+a.item-visit-web{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: var(--font-host);
+    font-weight: 400;
+    font-size: 16pt;
+    padding-top: 1rem;
+
+    .arrow-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    /* Reset general para todos los elementos del grid */
+   
+
+    /* Asegurar que todos los gallery-item respeten el contenedor */
+    .gallery-item {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* Reglas específicas para elementos de Fullstep */
+    .carousel-fullstep_01,
+    .carousel-fullstep_02,
+    .video-fullstep-identity,
+    .video-fullstep-concept,
+    .carousel-container-2,
+    .carousel-container-3 {
+        grid-column: 1 / span 1;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .proyecto-info-section.added-info{
+        gap:0.5rem;
+    }
+
+    .proyecto-web-button{
+        border:none;
+    }
+
+    a.item-visit-web{
+        padding-top: 0.5rem;
+        font-size: 14pt;
+        gap:1rem;
+        justify-content: start;
+
+        span{
+            min-width: 8rem;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+/* Estilos base para todos los gallery-item de Stay */
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.stay-portraitwhitepaper{
+    grid-column: 1 / span 1;
+}
+
+.carousel-stay_01{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+   img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   }
+   .carousel-btn{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+   }
+}
+
+.carousel-stay_02{
+    grid-column: 1 / span 1;
+}
+
+.video-stay-identity{
+    grid-column: 2 / span 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    iframe{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.video-bienvenidos-podcast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / span 1;
+}
+.video-bienvenidos-podcast iframe {
+    width: 90vw;
+    max-width: 900px;
+    height: 55vw;
+    max-height: 500px;
+    min-width: 320px;
+    min-height: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+.stay-podcast-01-carousel{
+    grid-column: 1 / span 1;
+    aspect-ratio: 1/1;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+
+.stay-podcast-spotify{
+    grid-column: 1 / span 2;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+
+    /* Asegurar que todos los gallery-item respeten el contenedor */
+    .gallery-item {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* Reglas específicas para elementos de Stay */
+    .stay-portraitwhitepaper,
+    .carousel-stay_01,
+    .carousel-stay_02,
+    .video-stay-identity,
+    .video-bienvenidos-podcast,
+    .stay-podcast-01-carousel,
+    .stay-podcast-spotify {
+        grid-column: 1 / span 1;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* Ajustes específicos para video-stay-identity en responsive */
+    .video-stay-identity {
+        aspect-ratio: 16/9;
+    }
+
+    .video-stay-identity iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Ajustes específicos para videos en responsive */
+    .video-bienvenidos-podcast iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+}

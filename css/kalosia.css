@@ -1,0 +1,51 @@
+/* Estilos base para todos los gallery-item de Kalosia */
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.kalosia-redes{
+    grid-column: 1 / 3;
+}
+
+.kalosia-merchan{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top;
+    }
+}
+
+.kalosia-escaparate{
+    grid-column: 1 / 3;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    /* Reset general para todos los elementos del grid */
+    .proyecto-gallery > * {
+        grid-column: 1 / span 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    /* Asegurar que todos los gallery-item respeten el contenedor */
+    .gallery-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    /* Reglas específicas para elementos de Kalosia */
+    .kalosia-redes,
+    .kalosia-escaparate {
+        grid-column: 1 / span 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+}
