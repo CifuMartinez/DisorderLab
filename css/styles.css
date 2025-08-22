@@ -107,7 +107,7 @@ h1 {
 h2 {
     font-family: var(--font-schibsted);
     font-weight: 700;
-    font-size: 28pt;
+    font-size: 32pt;
     letter-spacing: -0.01em;
 }
 
@@ -120,7 +120,7 @@ h3 {
 .destacado {
     font-family: var(--font-schibsted);
     font-weight: 700;
-    font-size: 22pt;
+    font-size: 28pt;
     letter-spacing: -0.01em;
     line-height: 1.2;
 }
@@ -128,7 +128,7 @@ h3 {
 .quote {
     font-family: var(--font-host);
     font-style: italic;
-    font-size: 14pt;
+    font-size: 16pt;
 }
 
 .numbers.experiments {
@@ -146,7 +146,7 @@ h3 {
 .subtitular, .titular-experimento {
     font-family: var(--font-host);
     font-weight: 400;
-    font-size: 18pt;
+    font-size: 20pt;
     line-height: 1.2;
     letter-spacing: -0.01em;
     padding-bottom:2rem;
@@ -155,7 +155,7 @@ h3 {
 p {
     font-family: var(--font-inter);
     font-weight: 500;
-    font-size: 12pt;
+    font-size: 16pt;
     line-height: 1.3;
 }
 
@@ -1030,6 +1030,12 @@ footer{
     h3{
         font-size: 14pt;
     } 
+    p{
+        font-size: 12pt;
+    }
+    .subtitular,.titular-experimento{
+        font-size: 18pt;
+    }
     .subtitular{
         font-size: 14pt;
     }
