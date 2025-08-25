@@ -278,7 +278,6 @@ header {
 .nav-item {
     font-family: var(--font-host);
     font-weight: 500;
-    font-size: 12pt;
     list-style: none;
 }
 
@@ -1043,9 +1042,7 @@ footer{
     .label{
         font-size: 12pt;
     }
-    li{
-        font-size: 14pt;
-    }
+
 
     button{
         font-size: 12pt;
@@ -1491,7 +1488,7 @@ li{
 }
 .text-info{
     order: 1;
-    width: 80%;
+    width: 95%;
     gap: 1rem;
     z-index: 100;
     
@@ -1526,7 +1523,7 @@ li{
 
 
 .final-info{
-    width: 80%;
+    width: 95%;
     gap: 1rem;
     z-index: 100;
     order:2;
