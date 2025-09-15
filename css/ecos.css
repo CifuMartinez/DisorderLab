@@ -1,0 +1,64 @@
+.ecos-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.gaunas-portrait {
+    grid-column: 1 / span 1;
+}
+
+.nazario-portrait {
+    grid-column: 2 / span 1;
+}
+
+.juego-portrait {
+    grid-column: 3 / span 1;
+}
+
+.proyecto-media.ecos-video-preview {
+    position: relative;
+    aspect-ratio: 16/9;
+    grid-column: 1 / span 3;
+    max-width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+    .ecos-gallery {
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .gaunas-portrait{
+        grid-column: 1 / span 2;
+    }
+
+    .nazario-portrait{
+        grid-column: 1 / span 1;
+    }
+
+    .juego-portrait{
+        grid-column: 2 / span 1;
+    }
+
+    .proyecto-media.ecos-video-preview{
+        grid-column: 1 / span 2;
+    }
+
+    /* Anular object-fit en pantallas menores a 1024px */
+    .gallery-item img,
+    .gallery-item video {
+        object-fit: initial;
+    }
+    
+   
+}
+
+@media (max-width: 480px) {
+    .ecos-gallery {
+        gap:0.5rem;
+    }
+
+    
+    
+}

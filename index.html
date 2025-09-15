@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisorderLab</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon-16x16.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon-32x32.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+    <script src="gsap/gsap.min.js"></script>
+    <script src="gsap/ScrollTrigger.min.js"></script>
+    <script src="gsap/ScrambleTextPlugin.min.js"></script>
+</head>
+<body>
+    <div class="line-separator-container">
+        <div class="line-separator"></div>  
+     </div>
+    <header>
+        <div class="header-container">
+            <nav class="nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/Disorder Lab_logo.svg" alt="DisorderLab">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="proyectos.html" class="nav-link"><span class="nav-text"><span class="nav-text-top">Projects</span><span class="nav-text-bottom">Projects</span></span></a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link"><span class="nav-text"><span class="nav-text-top">Let's talk</span><span class="nav-text-bottom">Let's talk</span></span></a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="hero-container">
+            <div class="text-info">
+                <h1>Design, code and narrative come together to make the unseen visible.</h1>
+                <div class="subtitular">Experiments in storytelling that translate complex ideas into digital and visual expressions.
+                </div>
+            </div>
+            <div class="isotype-frame header">
+                <div class="corner-vert tl"></div>
+                <div class="corner-vert tr"></div>
+                <div class="corner-vert bl"></div>
+                <div class="corner-vert br"></div>
+                <div class="corner bl"></div>
+                <div class="corner br"></div>
+                <div id="lottie-container"></div>
+                <div class="canvas-instrucciones" id="header-instrucciones">
+                    <img src="assets/touch.svg" alt="touch_icon" class="touch-icon">
+                  <span>Hold down the click and watch the noise grow. 
+                    <br><br>Feel the ideas stir inside the lab.</span>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- CONTACTO FLOTANTE -->
+<div id="contact-float" class="contact-float hidden">
+    <button class="contact-float-close" aria-label="Cerrar">&times;</button>
+  <div class="contact-float-box">
+    <div class="contact-float-yellow">
+        <div class="name-welcome-container">
+            <p class="name-welcome">Alex Cifuentes</p>
+            <p class="welcome-message">Nice to meet you!</p>
+        </div>
+      <img src="assets/profile_photo.png" alt="Foto de perfil" class="contact-float-photo">
+    </div>
+    <div class="contact-float-content">
+      <div class="contact-float-header">
+        <span class="contact-float-title">Contact</span>
+        <ul class="contact-float-socials">
+          <li><a href="https://www.linkedin.com/in/alexvisualdesigner/" target="_blank">Linkedin</a></li>
+          <li><a href="https://www.instagram.com/cifumartinez/" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="contact-float-info">
+        <div class="contact-float-row">
+          <img src="assets/mail_icon.svg" alt="Mail" class="contact-float-icon">
+          <span>alexcifuentesmartinez@gmail.com</span>
+        </div>
+        <div class="contact-float-row">
+          <img src="assets/whatsapp_icon.svg" alt="WhatsApp" class="contact-float-icon">
+          <span>+34 628460801</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN CONTACTO FLOTANTE -->
+ 
+        <!-- EXPERIMENTO 01 -->
+        <section class="experimento">
+            <div class="line-separator"></div>
+            <div class="experimento-header">
+                <div class="experimento-num">
+                    <h3>Experiment Nº.</h3>
+                    <div class="numbers experiments">[<span class="scramble-text">01 </span>]</div>
+                </div>
+
+                <div class="experimento-info">
+                        <div class="column-label">
+                            <div class="label">Module</div>
+                            <ul>
+                                <li>Science</li>
+                                <li>History</li>
+                                <li>Reading</li>
+                            </ul>
+                        </div>
+                        <div class="column-label">
+                         <div class="label">Reaction</div>
+                            <ul>
+                                <li>Interactivity</li>
+                                <li>Branding</li>
+                                <li>Storytelling</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+                    <div class="experimento-content">
+                        <div class="main-info">
+                        <video class="main-video" src="assets/Delirios_video.mp4" autoplay muted loop playsinline preload="auto"></video>
+                        <div class="info-project">
+                       
+                        <h2 class="experimento-title">The Delirium of Reason</h2>
+                        <div class="info-paragraph">
+                            <span class="info-preview">Info</span>
+                            <div class="subtitular-explanation"> 
+                            <div class="titular-experimento">Geniuses and demons of modern science</div>
+                            <p class="explanation">Inspired by Maniac by Benjamín Labatut, this interactive project explores one of the darkest and most revealing episodes of modern science: the creation of the atomic bomb. Through a visual narrative with its own identity—featuring animation and creative code—it invites users to delve into the inner conflict of the scientists who, by pushing the boundaries of knowledge, were forced to confront its dual nature: the power to heal or to annihilate, to build or to destroy.<br><br><span class="italic">[Spanish version]</span></p>
+                            </div>
+                       </div>
+                        
+                    </div>
+                    </div>
+                
+                    <div class="experimento-gallery">
+                        <div class="item item-portrait"> <!-- Imagen retrato -->
+                            <img src="assets/Delirios_Title.svg" alt="Delirios_title" class="delirio-title">
+                            <img src="assets/Explosion_Delirio.jpg" alt="Explosion_Delirio" class="explosion-delirio">
+                          </div>
+                         
+                                <video class="item item-error" src="assets/Error.mp4" autoplay muted loop playsinline preload="auto"></video>
+                          
+                            <button class="item button item-visit-web delirios scale" onclick="window.open('https://cifumartinez.github.io/Delirios_de_la_razon/', '_blank')">
+                            [Visit experiment]
+                            <div class="arrow-container">
+                                <img src="assets/arrow.svg" alt="arrow" class="arrow-icon">
+                                <img src="assets/arrow.svg" alt="arrow" class="arrow-icon">
+                            </div>
+                            </button>
+                            <div class="item item-quote delirios"> <!-- Cita -->
+                                <div class="experimento-quote">
+                                    <img src="assets/quotes.svg" alt="quote" class="quote-icon">
+                                    <span class="destacado">Now I am become Death, the destroyer of worlds.</span>
+                                    <div class="quote">J.R. Oppenheimer</div>
+                                </div>
+                            </div>
+                            
+                            <div class="item item-scientists"> <!-- Imagen científicos -->
+                                <img src="assets/Delirio_scientists.png" alt="Delirio_scientists" class="delirio-scientists">
+                            </div>
+                            
+                            <div class="item item-delirio-isotype">
+                                <img src="assets/Delirio_isotype.svg" alt="Delirio_isotype" class="delirio-isotype-icon">
+                            </div>
+                            <div class="item item-slider"> <!-- Video -->
+                                <video class="slider-data" src="assets/slider-data_delirios.mp4" autoplay muted loop playsinline preload="auto"></video>
+                            </div>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <div class="line-separator-container">
+            <div class="line-separator"></div>  
+         </div>
+        <section class="about-me">
+            <h3>About me</h3>
+            <div class="container">
+                <div class="text-info"> 
+                    <h1>Turning stories and data into meaningful visual experiences.</h1>
+                    <div class="subtitular">As a designer, motion grapher, and web developer, I explore how narratives and abstract ideas take shape through design—making complex information engaging, understandable, and memorable.</div>
+                    <button class="button scale about-me-button">
+                        [Discover more]
+                        <div class="arrow-container">
+                            <img src="assets/arrow.svg" alt="arrow" class="arrow-icon">
+                            <img src="assets/arrow.svg" alt="arrow" class="arrow-icon">
+                        </div>
+                    </button>
+                </div>
+                <div class="isotype-frame aboutme">
+                    <div class="corner-vert tl"></div>
+                    <div class="corner-vert tr"></div>
+                    <div class="corner-vert bl"></div>
+                    <div class="corner-vert br"></div>
+                    <div class="corner bl"></div>
+                    <div class="corner br"></div>
+                    <div id="aboutme-canvas"></div>
+                    <div class="canvas-instrucciones" id="aboutme-instrucciones">
+                        <img src="assets/touch.svg" alt="touch_icon" class="touch-icon">
+                        <span>Press and drag to generate idea particles. 
+                            <br><br>See how their collisions mimic the energetic flow of creativity.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIMENTO 02 -->
+        <section class="experimento">
+            <div class="line-separator"></div>
+            <div class="experimento-header">
+
+                <div class="experimento-num">
+                    <h3>Experiment Nº.</h3>
+                    <div class="numbers experiments">[<span class="scramble-text">02</span>]</div>
+                </div>
+
+                <div class="experimento-info">
+                        <div class="column-label">
+                            <div class="label">Module</div>
+                            <ul>
+                                <li>Spectrum</li>
+                                <li>Sci-Fi</li>
+                                <li>TV Show</li>
+                            </ul>
+                        </div>
+                        <div class="column-label">
+                         <div class="label">Reaction</div>
+                            <ul>
+                                <li>Interactivity</li>
+                                <li>Branding</li>
+                                <li>Storytelling</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+                    <div class="experimento-content">
+                        <div class="main-info">
+                        <video class="main-video" src="assets/WK_video.mp4" autoplay muted loop playsinline preload="auto"></video>
+                        <div class="info-project">
+                        <h2 class="experimento-title">Worklife Balance</h2>
+                        <div class="info-paragraph">
+                            <span class="info-preview">Info</span>
+                            <div class="subtitular-explanation"> 
+                            <div class="titular-experimento">Welcome to the future of separation</div>
+                            <p class="explanation">Worklife Balance is an immersive web experience inspired by Severance, simulating a corporate platform where wellbeing is only encouraged when it fuels productivity. Through serious-sounding tasks, cryptic motivation, and controlled relaxation, it explores the illusion of balance, the split between personal and work identity, and the silent demands of corporate culture—wrapped in a polished, ironic aesthetic.</p>
+                            </div>
+                       </div>
+                       
+                    </div>
+                    </div>
+                
+                    <div class="experimento-gallery worklife">
+                        <div class="item item-platform">
+                            <img src="assets/Platform_WK.png" alt="Platform_WK" class="platform-wk">
+                        </div>
+                        <div class="item item-contract">
+                            <img src="assets/Contract.png" alt="Contract_WK" class="contract-wk">
+                        </div>
+                        <div class="item item-claim">
+                            <img src="assets/Claim_WK.svg" alt="Claim_WK" class="claim-wk">
+                        </div>
+                        <div class="item item-clock">
+                            <video class="clock-video" src="assets/Clock.mp4" autoplay muted loop playsinline  preload="auto" ></video>
+                        </div>
+                        <button class="item item-visit-web worklife scale" onclick="window.open('https://cifumartinez.github.io/WorklifeBalance/', '_blank')">
+                            [Visit experiment]
+                                <div class="arrow-container">
+                                    <img src="assets/arrow.svg" alt="arrow" class="arrow-icon">
+                                    <img src="assets/arrow.svg" alt="arrow" class="arrow-icon">
+                                </div>
+                        </button>
+                        <div class="item item-quote worklife">
+                            <div class="experimento-quote">
+                            <img src="assets/quotes.svg" alt="quote" class="quote-icon">
+                            <span class="destacado">"What if your work self didn't have to deal with your personal mess—and your personal self never had to think about work again?"</span>
+                            <div class="quote">Worklife Balance Corporation</div>
+                            </div>
+                        </div>
+                  
+                    </div>
+                   
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- FINAL -->
+        <section class="final">
+            <div class="final-container">
+                <div class="final-info">
+                <h1>New experiments coming soon...</h1>
+                <div class="subtitular">The lab is always active—new ideas and projects are on the way. If you have stories, reports, or brands ready to come to life, let’s collaborate and spark new reactions together.</div>
+                <button class="button contact-button scale">
+                    [Let's create]
+                    <div class="arrow-container">
+                        <img src="assets/arrow.svg" alt="arrow" class="arrow-icon">
+                        <img src="assets/arrow.svg" alt="arrow" class="arrow-icon">
+                    </div>
+               </button>
+            </div>
+            <div class="isotype-frame next-steps">
+                <div class="corner-vert tl"></div>
+                <div class="corner-vert tr"></div>
+                <div class="corner-vert bl"></div>
+                <div class="corner-vert br"></div>
+                <div class="corner bl"></div>
+                <div class="corner br"></div>
+                <div class="microscope-gradient"></div>
+                <div id="next-steps"></div>
+                <div class="canvas-instrucciones" id="next-steps-instrucciones">
+                    <img src="assets/touch.svg" alt="touch_icon" class="touch-icon">
+                    <span>Explore through the microscope. 
+                        <br><br>Discover particles that reveal the lab’s hidden ideas.</span>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    <footer class="footer">
+        <p>Disorder Lab <span class="italic">by Alex Cifuentes</span></p>
+        <div class="line-separator-footer"></div>
+    </footer>
+    <script src="js/main-animations.js"></script>
+    <script src="js/sketch.js"></script>
+    <script src="js/circle.js"></script>
+    <script src="js/boundary.js"></script>
+    <script src="js/bubbles-static.js"></script>
+</body>
+</html> 
