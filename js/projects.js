@@ -1,7 +1,6 @@
 // Funcionalidad del carrusel para proyectos
 function initCarousel(containerSelector) {
     const carouselContainers = document.querySelectorAll(containerSelector);
-
     carouselContainers.forEach(carouselContainer => {
         if (!carouselContainer) return;
 

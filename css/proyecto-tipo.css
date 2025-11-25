@@ -156,8 +156,15 @@ h2.proyecto-claim {
 }
 
 
+.gallery-item {
+    border-radius: var(--project-container-radius);
+    overflow: hidden;
+}
+
 .gallery-item img,
-.gallery-item video {
+.gallery-item video,
+.gallery-item iframe {
+    border-radius: inherit;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -169,6 +176,7 @@ h2.proyecto-claim {
     position: relative;
     overflow: hidden;
     aspect-ratio: 16/9;
+    border-radius: var(--project-container-radius);
 }
 
 .carousel-wrapper {
@@ -195,6 +203,7 @@ h2.proyecto-claim {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: inherit;
 }
 
 /* Botones de navegación */
@@ -395,6 +404,7 @@ h2.proyecto-claim {
     overflow: hidden;
     max-width: 420px;
     width: 100%;
+    border-radius: var(--project-container-radius);
 }
 
 .proyecto-media img,

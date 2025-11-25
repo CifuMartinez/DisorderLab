@@ -1,0 +1,226 @@
+
+
+.proyecto-hero-header .transparency-layer {
+    background: linear-gradient(180deg, rgba(4, 18, 11, 0.9) 0%, rgba(4, 18, 11, 0.65) 60%, rgba(4, 18, 11, 0.4) 100%);
+}
+
+.proyecto-titulo,
+.proyecto-claim {
+    color: var(--deliverect-secondary);
+}
+
+
+.deliverect-hero-video {
+    grid-column: 1 / span 1;
+}
+
+.deliverect-logo {
+    grid-column: 2 / span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.logo-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+.deliverect-hero-video .video-wrapper,
+.deliverect-video-vertical .video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    border-radius: var(--project-container-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 100px rgba(255, 255, 255, 0.15);
+}
+
+.deliverect-video-vertical {
+    grid-column: 1 / span 1;
+}
+
+.deliverect-video-vertical .video-wrapper {
+    padding-bottom: 177.78%; /* 16:9 invertido = 9:16 */
+}
+
+.deliverect-hero-video iframe,
+.deliverect-video-vertical iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.hotelkit-story {
+    padding: 2rem;
+    border-radius: var(--project-container-radius);
+}
+
+.name-quote-container {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.name-quote-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.1rem;
+}
+.profile-photo {
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+    object-fit: cover;
+}
+
+.job-title {
+    color: #05ca79;
+    line-height: 1.1;
+}
+
+.carousel-deliverect-h,
+.carousel-deliverect-v,
+.carousel-deliverect-quotes,
+.carousel-deliverect-production {
+    border-radius: var(--project-container-radius);
+}
+
+.carousel-deliverect-h {
+    aspect-ratio: 16 / 9;
+}
+
+.carousel-deliverect-quotes {
+    aspect-ratio: 16 / 9;
+}
+
+.carousel-deliverect-production {
+    grid-column: 1 / span 1;
+    aspect-ratio: 16 / 9;
+}
+
+.carousel-deliverect-v {
+    grid-column: span 1;
+    aspect-ratio: 9 / 16;
+}
+
+.deliverect-testimonial-card {
+    grid-column: 2 / span 1;
+}
+
+.quote-container {
+    padding: 2rem;
+    border-radius: var(--project-container-radius);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quote-container .quote {
+    margin: 0;
+    font-size: 14pt;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.name-quote-container {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.name-quote-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.1rem;
+}
+
+.quote-container .profile-photo {
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.quote-container .name-quote {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.quote-container .job-title {
+    font-size: 12pt;
+    color: #f17565;
+    line-height: 1.1;
+}
+
+.deliverect-broll img {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .deliverect-hero-video,
+    .deliverect-logo,
+    .deliverect-testimonial,
+    .deliverect-video-vertical,
+    .carousel-deliverect-h,
+    .carousel-deliverect-v,
+    .carousel-deliverect-quotes {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .deliverect-hero-video,
+    .deliverect-logo,
+    .deliverect-testimonial,
+    .deliverect-video-vertical,
+    .carousel-deliverect-h,
+    .carousel-deliverect-v,
+    .carousel-deliverect-quotes {
+        grid-column: 1 / -1;
+    }
+
+    .deliverect-hero-video .video-wrapper,
+    .deliverect-video-vertical .video-wrapper {
+        border-radius: 16px;
+    }
+
+    .deliverect-video-vertical .video-wrapper {
+        padding-bottom: 177.78%;
+    }
+
+    .testimonial-card {
+        padding: 1.25rem;
+    }
+
+    .logo-container {
+        padding: 1.5rem;
+    }
+}
+
