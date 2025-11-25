@@ -1,0 +1,102 @@
+/* Estilos base para todos los gallery-item de Adatica */
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.adatica-logo-video{
+    grid-column: 1 / 2;
+}
+
+.adatica-moodboard{
+    grid-column: 2 / 2;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top;
+    }
+}
+
+.carousel-adatica{
+    grid-column: 1 / span 2;
+}
+
+.proyecto-web-button{
+    width: 30%;
+    border-top: 0.5px solid var(--color-white);
+}
+
+a.item-visit-web{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: var(--font-host);
+    font-weight: 400;
+    font-size: 16pt;
+    padding-top: 1rem;
+
+    .arrow-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    /* Reset general para todos los elementos del grid */
+    .proyecto-gallery > * {
+        grid-column: 1 / span 1 ;
+        width: 100% ;
+        max-width: 100% ;
+        overflow: hidden ;
+    }
+
+    /* Asegurar que todos los gallery-item respeten el contenedor */
+    .gallery-item {
+        width: 100%;
+        max-width: 100% ;
+        overflow: hidden ;
+    }
+
+    /* Reglas específicas para elementos de Adatica */
+    .adatica-logo-video,
+    .adatica-moodboard,
+    .carousel-adatica {
+        grid-column: 1 / span 1 ;
+        width: 100% ;
+        max-width: 100% ;
+        overflow: hidden;
+    }
+
+    .proyecto-info-section.added-info{
+        gap:0.5rem;
+    }
+
+    .proyecto-web-button{
+        border:none;
+    }
+
+    a.item-visit-web{
+        padding-top: 0.5rem;
+        font-size: 12pt;
+        gap:1rem;
+        justify-content: start;
+        min-width: 200px;
+
+
+        .arrow-container{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .arrow-icon{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}

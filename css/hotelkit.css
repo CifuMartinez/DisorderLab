@@ -1,0 +1,141 @@
+
+
+
+
+.hotelkit-hero-video,
+.medikit-hero-video,
+.medikit-section-title {
+    grid-column: 1 / 2;
+}
+
+.carousel-hotelkit-storyboards,
+.carousel-hotelkit-ui,
+.carousel-medikit-gallery {
+    border-radius: var(--project-container-radius);
+    overflow: hidden;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-hotelkit-storyboards .carousel-wrapper,
+.carousel-hotelkit-storyboards .carousel-slide,
+.carousel-hotelkit-storyboards img,
+.carousel-hotelkit-ui .carousel-wrapper,
+.carousel-hotelkit-ui .carousel-slide,
+.carousel-hotelkit-ui img,
+.carousel-medikit-gallery .carousel-wrapper,
+.carousel-medikit-gallery .carousel-slide,
+.carousel-medikit-gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-hotelkit-storyboards {
+    grid-column: 2 / span 1;
+}
+
+.carousel-hotelkit-ui {
+    grid-column: 1 / span 1;
+}
+
+.carousel-medikit-gallery {
+    grid-column: 1 / 2;
+}
+
+.hotelkit-hero-video .video-wrapper,
+.medikit-hero-video .video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    border-radius:var(--project-container-radius);
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(12, 20, 29, 0.35);
+}
+
+.hotelkit-hero-video iframe,
+.medikit-hero-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.media-frame {
+    border-radius: var(--project-container-radius);
+    overflow: hidden;
+    background: #030e18;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.media-frame img,
+.media-frame video {
+    width: 100%;
+    display: block;
+}
+
+.media-frame video {
+    object-fit: cover;
+}
+
+.hotelkit-story {
+    padding: 2rem;
+    border-radius: var(--project-container-radius);
+}
+
+.name-quote-container {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.name-quote-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.1rem;
+}
+.profile-photo {
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+    object-fit: cover;
+}
+
+.job-title {
+    font-size: 12pt;
+    color: #f17565;
+    line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+    /* Todos los elementos ocupan una columna completa en mobile */
+    .hotelkit-hero-video,
+    .medikit-hero-video,
+    .medikit-section-title,
+    .carousel-hotelkit-storyboards,
+    .carousel-hotelkit-ui,
+    .carousel-medikit-gallery,
+    .hotelkit-story,
+    .hotelkit-video,
+    .hotelkit-image,
+    .medikit-video,
+    .medikit-image {
+        grid-column: 1 / 1;
+    }
+    
+    .hotelkit-hero-video .video-wrapper,
+    .medikit-hero-video .video-wrapper {
+        border-radius: var(--project-container-radius);
+    }
+
+    .media-frame {
+        border-radius: var(--project-container-radius);
+    }
+
+    .hotelkit-story {
+        padding: 1.5rem;
+    }
+}
