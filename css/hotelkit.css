@@ -84,29 +84,10 @@
     border-radius: var(--project-container-radius);
 }
 
-.name-quote-container {
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-}
-.name-quote-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 0.1rem;
-}
-.profile-photo {
-    max-width: 3.5rem;
-    max-height: 3.5rem;
-    object-fit: cover;
-}
+
 
 .job-title {
     color: #f17565;
-    line-height: 1.1;
 }
 
 @media (max-width: 768px) {
