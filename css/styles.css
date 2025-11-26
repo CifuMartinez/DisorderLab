@@ -127,9 +127,9 @@ h3 {
 
 .quote {
     font-family: var(--font-host);
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
-    font-size: 16pt;
+    font-size: 14pt;
     line-height: 1.3;
 }
 
@@ -1090,7 +1090,7 @@ footer{
 
 
 .quote{
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .quote-icon{
