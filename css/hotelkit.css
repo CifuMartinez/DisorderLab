@@ -79,14 +79,7 @@
     object-fit: cover;
 }
 
-.hotelkit-story {
-    padding: 2rem;
-    border-radius: var(--project-container-radius);
-}
-
-
-
-.job-title {
+.job-testimonial {
     color: #f17565;
 }
 

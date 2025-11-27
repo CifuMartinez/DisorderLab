@@ -129,16 +129,10 @@
 .deliverect-testimonial {
     grid-column: 2 / span 1;
 }
-.quote-container .job-title {
+.job-testimonial {
     color: #05ca79;
 }
 
-.deliverect-broll img {
-    width: 100%;
-    border-radius: 20px;
-    height: 100%;
-    object-fit: cover;
-}
 
 @media (max-width: 1024px) {
     .deliverect-hero-video,
